@@ -2,5 +2,12 @@ body {
   background-color: peru;
 }
 h1 {
-  font-size: 3vw;
+  text-align: center;
+  font-size: 10vw;
+  color: rgb(3, 3, 58);
+  background-color: beige;
+}
+
+p {
+  text-align: center;
 }
