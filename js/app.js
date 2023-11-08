@@ -49,3 +49,8 @@ if(userResponse === 'y' || userResponse === 'yes') {
   alert('Correct I didn\'t.');
 }
 //console.log(`The user responded ${userResponse}`);
+
+//give the use 4 chances to answer the 6th question
+let chancesRemaining = 4;
+let myAge = 29;
+userResponse = prompt('How old am I?');
