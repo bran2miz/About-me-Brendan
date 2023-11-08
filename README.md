@@ -2,13 +2,13 @@
 
 ## About-me
 
-This website asks the user five simple questions about me and displays my short biography. It also asks the user guess my age and one of my top ten favorite movies. The purpose is to give the user a simple and quick way to get to know me. It also includes a list of my top ten favorite movies and my work and education experience. 
+This website asks the user five simple questions about me and displays my short biography. It also asks the user to guess my age and one of my top ten favorite movies. The purpose is to give the user a simple and quick way to get to know me. It also includes a list of my top ten favorite movies and my work and education experience.
 
 ### Author: Brendan McMullen
 
 ### Links and Resources
 
-I used chatGPT to figureout how ot break an outer loop from a nested loop.
+I used chatGPT to figureout how to break an outer loop from a nested loop.
 
 ### Lighthouse Accessibility Report Score
 
