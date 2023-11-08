@@ -8,6 +8,21 @@ h1 {
   background-color: beige;
 }
 
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 p {
   text-align: center;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 30px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 30px;
 }
