@@ -1,6 +1,6 @@
 'use strict';
 
-//Welcome the user
+/*//Welcome the user
 let userName = prompt('Hello There! What is your name?');
 alert(`Wecome ${userName} I am going to ask you five questions about my self. Good Luck!`);
 //console.log('I asked the user for their name: ${userName}');
@@ -48,9 +48,28 @@ if(userResponse === 'y' || userResponse === 'yes') {
 } else if(userResponse === 'n' || userResponse === 'no') {
   alert('Correct I didn\'t.');
 }
-//console.log(`The user responded ${userResponse}`);
+//console.log(`The user responded ${userResponse}`);*/
 
-//give the use 4 chances to answer the 6th question
+//give the user 4 chances to answer the 6th question
+
 let chancesRemaining = 4;
 let myAge = 29;
-userResponse = prompt('How old am I?');
+
+while(chancesRemaining > 0){
+  let userResponse = +prompt('How old am I? You have ${chancesRemaining} chances remaining.');
+  chancesRemaining--;
+  if(userResponse === 29){
+    alert('Correct1 I am 29.');
+    break;
+  }
+  else if (userResponse < 29)
+    alert(`Too low!`);
+  else if (userResponse > 29)
+    alert(`Too high!`);
+  if(chancesRemaining === 0)
+    alert("I am 29.");
+}
+//console.log(`The user responded ${userResponse}`);
+//console.log(typeof(userResponse));
+
+
