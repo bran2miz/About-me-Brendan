@@ -1,6 +1,6 @@
 'use strict';
 
-/*//Welcome the user
+//Welcome the user
 let userName = prompt('Hello There! What is your name?');
 alert(`Wecome ${userName} I am going to ask you five questions about my self. Good Luck!`);
 //console.log('I asked the user for their name: ${userName}');
@@ -55,21 +55,50 @@ if(userResponse === 'y' || userResponse === 'yes') {
 let chancesRemaining = 4;
 let myAge = 29;
 
+//Question #6
 while(chancesRemaining > 0){
-  let userResponse = +prompt('How old am I? You have ${chancesRemaining} chances remaining.');
+  userResponse = +prompt(`How old am I? You have ${chancesRemaining} chances remaining.`);
   chancesRemaining--;
-  if(userResponse === 29){
-    alert('Correct1 I am 29.');
+  if(userResponse === myAge){
+    alert('Correct! I am 29.');
     break;
   }
-  else if (userResponse < 29)
-    alert(`Too low!`);
-  else if (userResponse > 29)
-    alert(`Too high!`);
+  else if (userResponse < myAge)
+    alert('Too low!');
+  else if (userResponse > myAge)
+    alert('Too high!');
   if(chancesRemaining === 0)
-    alert("I am 29.");
+    alert('I am 29.');
 }
 //console.log(`The user responded ${userResponse}`);
 //console.log(typeof(userResponse));
 
-
+//Question #7
+let myFavoriteMovies = ['A Beautiful Mind',
+  'The Immitation Game',
+  'Alien',
+  'Invasion of the Body Snatchers',
+  'Star Trek II',
+  'The Producers',
+  'Amadeus',
+  'Star War IV',
+  'The Band\'s Visit',
+  'The Fellowship of the Ring'];
+chancesRemaining = 6;
+mainLoop: while(chancesRemaining > 0){
+  userResponse = prompt(`Guess one of my top 10 favorite movies. You have ${chancesRemaining} chances remaining.`);
+  chancesRemaining--;
+  for(let i = 0; i < myFavoriteMovies.length; i++){
+    //Check the users answer
+    if(myFavoriteMovies[i].toLowerCase() === userResponse.toLowerCase()){
+      //console.log(`The Answer is ${myFavoriteMovies[i]}`);
+      //console.log(`The user responded ${userResponse}`);
+      alert('Yes that is one of them.');
+      break mainLoop;
+    }
+    if(i >= myFavoriteMovies.length - 1)
+      alert('Nope that is not one of them.');
+  }
+}
+alert('My top 10 favorite movies are: ' + myFavoriteMovies);
+alert('Thanks for answering these questions ' + userName + "!");
