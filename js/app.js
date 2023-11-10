@@ -5,7 +5,7 @@ let userName = prompt('Hello There! What is your name?');
 let score = 0;
 alert(`Wecome ${userName} I am going to ask you five questions about my self. Good Luck!`);
 //console.log('I asked the user for their name: ${userName}');
-console.log(score);
+//console.log(score);
 
 //Question #1
 let userResponse = prompt('Have I been to Luxembourg City twice?').toLowerCase();
@@ -16,7 +16,7 @@ if(userResponse === 'y' || userResponse === 'yes') {
   score++;
 }
 //console.log(`The user responded ${userResponse}`);
-console.log(score);
+//console.log(score);
 
 //Question #2
 userResponse = prompt('Is my favorite TV show Doctor Who?').toLowerCase();
@@ -27,7 +27,7 @@ if(userResponse === 'y' || userResponse === 'yes') {
   score++;
 }
 //console.log(`The user responded ${userResponse}`);
-console.log(score);
+//console.log(score);
 
 //Question #3
 userResponse = prompt('Did I used to live in Texas').toLowerCase();
@@ -38,7 +38,7 @@ if(userResponse === 'y' || userResponse === 'yes') {
   alert('Nope! I did my undergrad at Rice University in Houston.');
 }
 //console.log(`The user responded ${userResponse}`);
-console.log(score);
+//console.log(score);
 
 //Question #4
 userResponse = prompt('Do I like Oysters on the half shell?').toLowerCase();
@@ -49,7 +49,7 @@ if(userResponse === 'y' || userResponse === 'yes') {
   alert('Wrong! I\'m from the Northwest so of course I do.');
 }
 //console.log(`The user responded ${userResponse}`);
-console.log(score);
+//console.log(score);
 
 //Question #5
 userResponse = prompt('Did I used to live on a boat?').toLowerCase();
@@ -60,7 +60,7 @@ if(userResponse === 'y' || userResponse === 'yes') {
   score++;
 }
 //console.log(`The user responded ${userResponse}`);*/
-console.log(score);
+//console.log(score);
 
 //give the user 4 chances to answer the 6th question
 
@@ -87,7 +87,7 @@ while(chancesRemaining > 0){
 }
 //console.log(`The user responded ${userResponse}`);
 //console.log(typeof(userResponse));
-console.log(score);
+//console.log(score);
 
 //Question #7
 let myFavoriteMovies = ['A Beautiful Mind',
@@ -97,7 +97,7 @@ let myFavoriteMovies = ['A Beautiful Mind',
   'Star Trek II',
   'The Producers',
   'Amadeus',
-  'Star War IV',
+  'Star Wars IV',
   'The Band\'s Visit',
   'The Fellowship of the Ring'];
 chancesRemaining = 6;
@@ -117,6 +117,6 @@ mainLoop: while(chancesRemaining > 0){
       alert('Nope that is not one of them.');
   }
 }
-console.log(score);
+//console.log(score);
 alert('My top 10 favorite movies are: ' + myFavoriteMovies);
 alert('Thanks for answering these questions ' + userName + '! You got ' + score + '/7 questions correct!');
