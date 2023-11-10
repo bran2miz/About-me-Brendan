@@ -2,6 +2,7 @@
 
 //Welcome the user
 let userName = prompt('Hello There! What is your name?');
+let score;
 alert(`Wecome ${userName} I am going to ask you five questions about my self. Good Luck!`);
 //console.log('I asked the user for their name: ${userName}');
 
@@ -11,6 +12,7 @@ if(userResponse === 'y' || userResponse === 'yes') {
   alert('Wrong! I\'ve only been there once.');
 } else if(userResponse === 'n' || userResponse === 'no') {
   alert('Correct! I\'ve only been there once.');
+  score++;
 }
 //console.log(`The user responded ${userResponse}`);
 
@@ -20,6 +22,7 @@ if(userResponse === 'y' || userResponse === 'yes') {
   alert('Wrong! It\'s FireFly.');
 } else if(userResponse === 'n' || userResponse === 'no') {
   alert('Correct! It\'s FireFly.');
+  score++;
 }
 //console.log(`The user responded ${userResponse}`);
 
@@ -27,6 +30,7 @@ if(userResponse === 'y' || userResponse === 'yes') {
 userResponse = prompt('Did I used to live in Texas').toLowerCase();
 if(userResponse === 'y' || userResponse === 'yes') {
   alert('Yep! I did my undergrad at Rice University.');
+  score++;
 } else if(userResponse === 'n' || userResponse === 'no') {
   alert('Nope! I did my undergrad at Rice University in Houston.');
 }
@@ -36,6 +40,7 @@ if(userResponse === 'y' || userResponse === 'yes') {
 userResponse = prompt('Do I like Oysters on the half shell?').toLowerCase();
 if(userResponse === 'y' || userResponse === 'yes') {
   alert('Yes! I\'m from the Northwest so of course I do.');
+  score++;
 } else if(userResponse === 'n' || userResponse === 'no') {
   alert('Wrong! I\'m from the Northwest so of course I do.');
 }
@@ -47,6 +52,7 @@ if(userResponse === 'y' || userResponse === 'yes') {
   alert('No I didn\'t.');
 } else if(userResponse === 'n' || userResponse === 'no') {
   alert('Correct I didn\'t.');
+  score++;
 }
 //console.log(`The user responded ${userResponse}`);*/
 
@@ -67,8 +73,10 @@ while(chancesRemaining > 0){
     alert('Too low!');
   else if (userResponse > myAge)
     alert('Too high!');
-  if(chancesRemaining === 0)
+  if(chancesRemaining === 0){
     alert('I am 29.');
+    score++;
+  }
 }
 //console.log(`The user responded ${userResponse}`);
 //console.log(typeof(userResponse));
@@ -94,6 +102,7 @@ mainLoop: while(chancesRemaining > 0){
       //console.log(`The Answer is ${myFavoriteMovies[i]}`);
       //console.log(`The user responded ${userResponse}`);
       alert('Yes that is one of them.');
+      score++;
       break mainLoop;
     }
     if(i >= myFavoriteMovies.length - 1)
@@ -101,4 +110,4 @@ mainLoop: while(chancesRemaining > 0){
   }
 }
 alert('My top 10 favorite movies are: ' + myFavoriteMovies);
-alert('Thanks for answering these questions ' + userName + "!");
+alert('Thanks for answering these questions ' + userName + '! You got ' + score + '/7 questions correct!');
