@@ -75,7 +75,7 @@ while(chancesRemaining > 0){
 
 //Question #7
 let myFavoriteMovies = ['A Beautiful Mind',
-  'The Immitation Game',
+  'The Imitation Game',
   'Alien',
   'Invasion of the Body Snatchers',
   'Star Trek II',
