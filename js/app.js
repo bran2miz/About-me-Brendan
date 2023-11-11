@@ -84,29 +84,35 @@ questionFive();
 //give the user 4 chances to answer the 6th question
 
 let chancesRemaining = 4;
-let myAge = 29;
 
-// //Question #6
-// while(chancesRemaining > 0){
-//   userResponse = +prompt(`How old am I? You have ${chancesRemaining} chances remaining.`);
-//   chancesRemaining--;
-//   if(userResponse === myAge){
-//     alert('Correct! I am 29.');
-//     score++;
-//     break;
-//   }
-//   else if (userResponse < myAge)
-//     alert('Too low!');
-//   else if (userResponse > myAge)
-//     alert('Too high!');
-//   if(chancesRemaining === 0){
-//     alert('I am 29.');
-    
-//   }
-// }
-// //console.log(`The user responded ${userResponse}`);
-// //console.log(typeof(userResponse));
-// //console.log(score);
+
+
+
+//Question #6
+function questionSix() {
+  let myAge = 29;
+  while(chancesRemaining > 0){
+    let userResponse = +prompt(`How old am I? You have ${chancesRemaining} chances remaining.`);
+    chancesRemaining--;
+    if(userResponse === myAge){
+      alert('Correct! I am 29.');
+      score++;
+      break;
+    }
+    else if (userResponse < myAge)
+      alert('Too low!');
+    else if (userResponse > myAge)
+      alert('Too high!');
+    if(chancesRemaining === 0){
+      alert('I am 29.');
+      
+    }
+  }
+}
+questionSix();
+//console.log(`The user responded ${userResponse}`);
+//console.log(typeof(userResponse));
+//console.log(score);
 
 // //Question #7
 // let myFavoriteMovies = ['A Beautiful Mind',
