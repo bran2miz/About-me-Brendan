@@ -37,16 +37,19 @@ questionTwo();
 //console.log(`The user responded ${userResponse}`);
 //console.log(score);
 
-// //Question #3
-// userResponse = prompt('Did I used to live in Texas').toLowerCase();
-// if(userResponse === 'y' || userResponse === 'yes') {
-//   alert('Yep! I did my undergrad at Rice University.');
-//   score++;
-// } else if(userResponse === 'n' || userResponse === 'no') {
-//   alert('Nope! I did my undergrad at Rice University in Houston.');
-// }
-// //console.log(`The user responded ${userResponse}`);
-// //console.log(score);
+//Question #3
+function questionThree() {
+  let userResponse = prompt('Did I used to live in Texas').toLowerCase();
+  if(userResponse === 'y' || userResponse === 'yes') {
+    alert('Yep! I did my undergrad at Rice University.');
+    score++;
+  } else if(userResponse === 'n' || userResponse === 'no') {
+    alert('Nope! I did my undergrad at Rice University in Houston.');
+  }
+}
+questionThree();
+//console.log(`The user responded ${userResponse}`);
+//console.log(score);
 
 // //Question #4
 // userResponse = prompt('Do I like Oysters on the half shell?').toLowerCase();
