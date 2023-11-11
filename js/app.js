@@ -9,16 +9,19 @@ introduction();
 //console.log('I asked the user for their name: ${userName}');
 //console.log(score);
 
-// //Question #1
-// let userResponse = prompt('Have I been to Luxembourg City twice?').toLowerCase();
-// if(userResponse === 'y' || userResponse === 'yes') {
-//   alert('Wrong! I\'ve only been there once.');
-// } else if(userResponse === 'n' || userResponse === 'no') {
-//   alert('Correct! I\'ve only been there once.');
-//   score++;
-// }
-// //console.log(`The user responded ${userResponse}`);
-// //console.log(score);
+//Question #1
+function questionOne() {
+  let userResponse = prompt('Have I been to Luxembourg City twice?').toLowerCase();
+  if(userResponse === 'y' || userResponse === 'yes') {
+    alert('Wrong! I\'ve only been there once.');
+  } else if(userResponse === 'n' || userResponse === 'no') {
+    alert('Correct! I\'ve only been there once.');
+    score++;
+  }
+}
+questionOne();
+//console.log(`The user responded ${userResponse}`);
+//console.log(score);
 
 // //Question #2
 // userResponse = prompt('Is my favorite TV show Doctor Who?').toLowerCase();
