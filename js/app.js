@@ -114,34 +114,38 @@ questionSix();
 //console.log(typeof(userResponse));
 //console.log(score);
 
-// //Question #7
-// let myFavoriteMovies = ['A Beautiful Mind',
-//   'The Imitation Game',
-//   'Alien',
-//   'Invasion of the Body Snatchers',
-//   'Star Trek II',
-//   'The Producers',
-//   'Amadeus',
-//   'Star Wars IV',
-//   'The Band\'s Visit',
-//   'The Fellowship of the Ring'];
-// chancesRemaining = 6;
-// mainLoop: while(chancesRemaining > 0){
-//   userResponse = prompt(`Guess one of my top 10 favorite movies. You have ${chancesRemaining} chances remaining.`);
-//   chancesRemaining--;
-//   for(let i = 0; i < myFavoriteMovies.length; i++){
-//     //Check the users answer
-//     if(myFavoriteMovies[i].toLowerCase() === userResponse.toLowerCase()){
-//       //console.log(`The Answer is ${myFavoriteMovies[i]}`);
-//       //console.log(`The user responded ${userResponse}`);
-//       alert('Yes that is one of them.');
-//       score++;
-//       break mainLoop;
-//     }
-//     if(i >= myFavoriteMovies.length - 1)
-//       alert('Nope that is not one of them.');
-//   }
-// }
-// //console.log(score);
-// alert('My top 10 favorite movies are: ' + myFavoriteMovies);
-// alert('Thanks for answering these questions ' + userName + '! You got ' + score + '/7 questions correct!');
+//Question #7
+function questionSeven() {
+  let myFavoriteMovies = ['A Beautiful Mind',
+  'The Imitation Game',
+  'Alien',
+  'Invasion of the Body Snatchers',
+  'Star Trek II',
+  'The Producers',
+  'Amadeus',
+  'Star Wars IV',
+  'The Band\'s Visit',
+  'The Fellowship of the Ring'];
+chancesRemaining = 6;
+mainLoop: while(chancesRemaining > 0){
+  let userResponse = prompt(`Guess one of my top 10 favorite movies. You have ${chancesRemaining} chances remaining.`);
+  chancesRemaining--;
+  for(let i = 0; i < myFavoriteMovies.length; i++){
+    //Check the users answer
+    if(myFavoriteMovies[i].toLowerCase() === userResponse.toLowerCase()){
+      //console.log(`The Answer is ${myFavoriteMovies[i]}`);
+      //console.log(`The user responded ${userResponse}`);
+      alert('Yes that is one of them.');
+      score++;
+      break mainLoop;
+    }
+    if(i >= myFavoriteMovies.length - 1)
+      alert('Nope that is not one of them.');
+  }
+}
+alert('My top 10 favorite movies are: ' + myFavoriteMovies);
+}
+questionSeven();
+//console.log(score);
+
+alert('Thanks for answering these questions ' + userName + '! You got ' + score + '/7 questions correct!');
