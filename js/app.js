@@ -66,21 +66,25 @@ questionFour();
 //console.log(`The user responded ${userResponse}`);
 //console.log(score);
 
-// //Question #5
-// userResponse = prompt('Did I used to live on a boat?').toLowerCase();
-// if(userResponse === 'y' || userResponse === 'yes') {
-//   alert('No I didn\'t.');
-// } else if(userResponse === 'n' || userResponse === 'no') {
-//   alert('Correct I didn\'t.');
-//   score++;
-// }
-// //console.log(`The user responded ${userResponse}`);*/
-// //console.log(score);
+//Question #5
+function questionFive() {
+  let userResponse = prompt('Did I used to live on a boat?').toLowerCase();
+if(userResponse === 'y' || userResponse === 'yes') {
+  alert('No I didn\'t.');
+} else if(userResponse === 'n' || userResponse === 'no') {
+  alert('Correct I didn\'t.');
+  score++;
+}
+}
 
-// //give the user 4 chances to answer the 6th question
+questionFive();
+//console.log(`The user responded ${userResponse}`);*/
+//console.log(score);
 
-// let chancesRemaining = 4;
-// let myAge = 29;
+//give the user 4 chances to answer the 6th question
+
+let chancesRemaining = 4;
+let myAge = 29;
 
 // //Question #6
 // while(chancesRemaining > 0){
