@@ -26,4 +26,5 @@ and
 
 These don't seem to be causing problems but I don't know what is causing this.
 
- 
+Driver: Brandon Mizutani
+Navigator: Brendan McMullen
