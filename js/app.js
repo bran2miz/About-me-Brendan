@@ -23,16 +23,19 @@ questionOne();
 //console.log(`The user responded ${userResponse}`);
 //console.log(score);
 
-// //Question #2
-// userResponse = prompt('Is my favorite TV show Doctor Who?').toLowerCase();
-// if(userResponse === 'y' || userResponse === 'yes') {
-//   alert('Wrong! It\'s FireFly.');
-// } else if(userResponse === 'n' || userResponse === 'no') {
-//   alert('Correct! It\'s FireFly.');
-//   score++;
-// }
-// //console.log(`The user responded ${userResponse}`);
-// //console.log(score);
+//Question #2
+function questionTwo() {
+  let userResponse = prompt('Is my favorite TV show Doctor Who?').toLowerCase();
+  if(userResponse === 'y' || userResponse === 'yes') {
+    alert('Wrong! It\'s FireFly.');
+  } else if(userResponse === 'n' || userResponse === 'no') {
+    alert('Correct! It\'s FireFly.');
+    score++;
+  }
+}
+questionTwo();
+//console.log(`The user responded ${userResponse}`);
+//console.log(score);
 
 // //Question #3
 // userResponse = prompt('Did I used to live in Texas').toLowerCase();
