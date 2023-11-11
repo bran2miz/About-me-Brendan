@@ -51,16 +51,20 @@ questionThree();
 //console.log(`The user responded ${userResponse}`);
 //console.log(score);
 
-// //Question #4
-// userResponse = prompt('Do I like Oysters on the half shell?').toLowerCase();
-// if(userResponse === 'y' || userResponse === 'yes') {
-//   alert('Yes! I\'m from the Northwest so of course I do.');
-//   score++;
-// } else if(userResponse === 'n' || userResponse === 'no') {
-//   alert('Wrong! I\'m from the Northwest so of course I do.');
-// }
-// //console.log(`The user responded ${userResponse}`);
-// //console.log(score);
+//Question #4
+function questionFour () {
+  let userResponse = prompt('Do I like Oysters on the half shell?').toLowerCase();
+  if(userResponse === 'y' || userResponse === 'yes') {
+    alert('Yes! I\'m from the Northwest so of course I do.');
+    score++;
+  } else if(userResponse === 'n' || userResponse === 'no') {
+    alert('Wrong! I\'m from the Northwest so of course I do.');
+  }
+}
+
+questionFour();
+//console.log(`The user responded ${userResponse}`);
+//console.log(score);
 
 // //Question #5
 // userResponse = prompt('Did I used to live on a boat?').toLowerCase();
