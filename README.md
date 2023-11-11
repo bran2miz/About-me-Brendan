@@ -25,3 +25,6 @@ and
 127.0.0.1/:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
 
 These don't seem to be causing problems but I don't know what is causing this.
+
+Driver: Brandon Mizutani
+Navigator: Brendan McMullen
