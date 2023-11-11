@@ -148,4 +148,8 @@ alert('My top 10 favorite movies are: ' + myFavoriteMovies);
 questionSeven();
 //console.log(score);
 
-alert('Thanks for answering these questions ' + userName + '! You got ' + score + '/7 questions correct!');
+function goodBye() {
+  alert('Thanks for answering these questions ' + userName + '! You got ' + score + '/7 questions correct!');
+}
+goodBye();
+
